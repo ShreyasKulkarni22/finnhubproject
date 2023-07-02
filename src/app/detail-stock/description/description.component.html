@@ -1,0 +1,22 @@
+<div class="card" style="width: 18rem;">
+	<div *ngIf="!show" class="card-body">
+		<h5 class="card-title">
+			Description not available
+		</h5>
+	</div>
+
+	<div *ngIf="show" class="card-body">
+		<h5 class="card-title">
+			{{ description["name"] }}
+		</h5>
+		<h6 class="card-subtitle mb-2 text-muted">{{ description["ticker"] }}</h6>
+		<ul class="list-group list-group-flush">
+			<li class="list-group-item">Country: {{ description["country"] }}</li>
+			<li class="list-group-item">Currency: {{ description["currency"] }}</li>
+			<li class="list-group-item">Industry: {{ description["finnhubIndustry"] }}</li>
+			<li class="list-group-item">Exchange: {{ description["exchange"] }}</li>
+			<li class="list-group-item">IPO date: {{ description["ipo"] }}</li>
+			<li class="list-group-item"> <a href="{{description['weburl']}}">Visit Page</a></li>
+		</ul>
+	</div>
+</div>

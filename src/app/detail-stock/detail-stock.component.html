@@ -1,0 +1,33 @@
+<div class="container">
+
+	<div class="row pt-3">
+		<div class="col">
+			<app-description [description]="profile"></app-description>
+		</div>
+		<div class="col">
+			<div class="row">
+				<app-price-target [quote]="quote" [target]="target"></app-price-target>
+			</div>
+			<div class="row pt-2">
+				<app-earnings [earnings]="earnings">
+				</app-earnings>
+			</div>
+		</div>
+		<div class="col-5">
+			<app-trend [trend]="trend"></app-trend>
+		</div>
+	</div>
+	<div class="row pt-1">
+		<div class="col-7">
+			<app-histo-sent [histo]="histo_sent"></app-histo-sent>
+		</div>
+		<div class="col-5">
+			<app-buzz [buzz]="buzz"></app-buzz>
+		</div>
+	</div>
+	<div class="row pt-1">
+		<div class="col">
+			<app-news [articles]="news"></app-news>
+		</div>
+	</div>
+</div>

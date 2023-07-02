@@ -1,0 +1,8 @@
+<div class="card" style="width: 100%;">
+	<h5 class="card-title">Trend</h5>
+	<h6 *ngIf="show" class="card-subtitle mb-2 text-muted">
+		{{trend["signal"] | uppercase}}</h6>
+	<canvas id="chartTrend"></canvas>
+	<h6 *ngIf="!show" class="card-subtitle mb-2 text-muted">
+		No data available for the asset</h6>
+</div>
